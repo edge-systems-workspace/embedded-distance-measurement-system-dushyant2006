@@ -1,27 +1,21 @@
 #include <Arduino.h>
+
 /**
  * @file main.cpp
  * @brief Embedded Distance Measurement using Ultrasonic Sensor
- * @author YOUR_NAME
- * @date YYYY-MM-DD
+ * @author Dushyant
+ * @date 2026-02-28
  *
  * @details
  * Measures distance using HC-SR04 ultrasonic sensor
  * and displays structured output via Serial Monitor.
  */
 
- // TODO 1:
- // Define TRIG pin (Use pin 9)
+#define TRIG_PIN 9
+#define ECHO_PIN 10
 
- // TODO 2:
- // Define ECHO pin (Use pin 10)
-
- // TODO 3:
- // Create variable to store duration
-
- // TODO 4:
- // Create variable to store calculated distance
-
+long duration;
+float distance;
 void setup() {
 
     // TODO 5:
