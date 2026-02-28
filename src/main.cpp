@@ -46,10 +46,11 @@ void loop() {
 
     // Calculate distance in cm
     distance = duration * 0.0343 / 2;
-
-    // TODO 13:
     // Print calculated distance
+    Serial.print("Distance: ");
+    Serial.print(distance);
+    Serial.println(" cm");
 
-    // TODO 14:
     // Add delay (500ms)
+    delay(500);
 }
