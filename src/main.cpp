@@ -18,19 +18,18 @@ long duration;
 float distance;
 void setup() {
 
-    // TODO 5:
     // Initialize Serial communication (9600 baud rate)
+    Serial.begin(9600);
 
-    // TODO 6:
     // Configure TRIG as OUTPUT
+    pinMode(TRIG_PIN, OUTPUT);
 
-    // TODO 7:
     // Configure ECHO as INPUT
+    pinMode(ECHO_PIN, INPUT);
 
-    // TODO 8:
     // Print system initialization message
+    Serial.println("Ultrasonic Distance Measurement System Initialized");
 }
-
 void loop() {
 
     // TODO 9:
